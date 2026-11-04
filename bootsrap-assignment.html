@@ -5,10 +5,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bootstrap Grid Layout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom Styles with Unique Colors */
+        body {
+            background-color: #F5F0E6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #d9d4e1 0%, #2bbe5c 100%);
+            color: #F5F0E6;
+            padding: 40px 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .hero-section h1 {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .navbar-custom {
+            background-color: #2C3E50;
+            border-radius: 10px;
+            padding: 10px 20px;
+        }
+        .navbar-custom .navbar-brand {
+            color: #F5F0E6 !important;
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+        .navbar-custom .nav-link {
+            color: #BDC3C7 !important;
+            margin-left: 15px;
+            transition: color 0.3s;
+        }
+        .navbar-custom .nav-link:hover {
+            color: #76727c !important;
+        }
+        .card-custom {
+            background-color: #FFFFFF;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(107, 76, 154, 0.15);
+            border-left: 4px solid #6B4C9A;
+            height: 100%;
+        }
+        .card-custom h4 {
+            color: #6B4C9A;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .member-card {
+            background-color: #FAF8F5;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #E8D5B7;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(107, 76, 154, 0.2);
+        }
+        .member-card img {
+            border-radius: 50%;
+            border: 3px solid #6B4C9A;
+            margin-bottom: 15px;
+        }
+        .member-card h6 {
+            color: #2C3E50;
+            font-weight: 600;
+        }
+        .member-card button {
+            background: none;
+            border: none;
+            padding: 0;
+        }
+        .member-card button a {
+            color: #2E8B57;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .member-card button a:hover {
+            color: #6B4C9A;
+            text-decoration: underline;
+        }
+        .btn-custom {
+            background-color: #6B4C9A;
+            color: #F5F0E6;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        .btn-custom:hover {
+            background-color: #8B5A9E;
+            color: #d0941c;
+            transform: scale(1.05);
+        }
+        .form-control {
+            border-color: #E8D5B7;
+            border-radius: 8px;
+            padding: 12px;
+        }
+        .form-control:focus {
+            border-color: #6B4C9A;
+            box-shadow: 0 0 0 0.2rem rgba(107, 76, 154, 0.25);
+        }
+        .form-label {
+            color: #2C3E50;
+            font-weight: 500;
+        }
+        .footer-custom {
+            background-color: #2C3E50;
+            color: #BDC3C7;
+            border-radius: 10px;
+            padding: 30px 20px;
+        }
+        .footer-custom h5 {
+            color: #F5F0E6;
+            font-weight: 600;
+        }
+        .footer-custom a {
+            color: #BDC3C7;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .footer-custom a:hover {
+            color: #6B4C9A;
+        }
+        .footer-custom hr {
+            border-color: #6B4C9A;
+        }
+        @media (max-width: 768px) {
+            .hero-section {
+                padding: 30px 15px;
+            }
+            .card-custom {
+                padding: 20px;
+            }
+        }
+    </style>
  </head>
 <body>
     <div class="container mt-4">
-        <!-- Header -->
         <div class="row mb-3">
             <div class="col-12">
                 <div class="hero-section text-center">
@@ -57,9 +197,9 @@
                 <div class="card-custom">
                     <h4>Our Team</h4>
                     <div class="row">
-                        <div class="col-12 mb-3">
+                        <div class="col-6 mb-3">
                             <div class="member-card">
-                                <img src="" alt="Member 1" width="80">
+                                <img src="WhatsApp Image 2026-10-18 at 13.46.19.jpeg" alt="" width="80">
                                 <h6 class="mb-1">MUSEVENI NDANYUZWE</h6>
                                 <p class="text-muted mb-2"><small>Reg No: 25/BSE/BU/R/0027</small></p>
                                 <button>
@@ -67,9 +207,9 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-12 mb-3">
+                        <div class="col-6 mb-3">
                             <div class="member-card">
-                                <img src="" alt="Member 2" width="80">
+                                <img src="WhatsApp Image 2026-11-02 at 09.40.22.jpeg" alt="" width="80">
                                 <h6 class="mb-1">GATCHANG MUT CHIOK ROW</h6>
                                 <p class="text-muted mb-2"><small>Reg No: 25/BSE/BU/R/0033</small></p>
                                 <button>
@@ -77,9 +217,9 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-12 mb-3">
+                        <div class="col-6 mb-3">
                             <div class="member-card">
-                                <img src="" alt="Member 3" width="80">
+                                <img src="WhatsApp Image 2026-11-02 at 10.16.15.jpeg" alt="" width="80">
                                 <h6 class="mb-1">TENDO GRACE NAIGURU</h6>
                                 <p class="text-muted mb-2"><small>Reg No:26/BCC/BU/R/0004</small></p>
                                 <button>
@@ -87,9 +227,9 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-12 mb-3">
+                        <div class="col-6 mb-3">
                             <div class="member-card">
-                                <img src="" alt="Member 4" width="80">
+                                <img src="WhatsApp Image 2026-09-28 at 09.09.34.jpeg" alt="" width="80">
                                 <h6 class="mb-1">NAMAYANJA JULIET</h6>
                                 <p class="text-muted mb-2"><small>Reg No: 26/BCC/BU/R/0003 </small></p>
                                 <button>
@@ -107,19 +247,13 @@
                 <div class="card-custom">
                     <h4>Contact Form</h4>
                     <form>
-                        <div class="row mb-3">
-                            <div class="col-md-6">
-                                <label for="name" class="form-label">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                            </div>
-                            <div class="col-md-6">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="Your Email">
-                            </div>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
                         </div>
                         <div class="mb-3">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
                         </div>
                         <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
